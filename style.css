@@ -1,0 +1,123 @@
+*{
+    margin: 0 auto; /* Centraliza o conteúdo */
+    width: 100%; /* Largura total */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo da largura */
+    font-family: sans-serif; /* Define a fonte padrão */
+}
+  
+body
+{
+    background-color: #18181B; /* Cor de fundo */
+    width: 100%; /* Largura total */
+    height: 100vh; /* Altura total da viewport */
+    display: flex; /* Exibe como flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza em coluna */
+}
+  
+.logo
+{
+    max-width: 600px; /* Largura máxima da logo */
+    margin-bottom: 24px; /* Espaçamento abaixo da logo */
+}
+  
+.container-input
+{
+    max-width: 480px; /* Largura máxima do container de input */
+    margin: 14px 0; /* Margem vertical */
+}
+  
+.container-input span 
+{
+    color: #FFF; /* Cor do texto branco */
+    font-size: 22px; /* Tamanho da fonte */
+}
+  
+.slider 
+{
+    margin-top: 8px; /* Margem superior */
+    width: 100%; /* Largura total */
+    height: 18px; /* Altura do slider */
+    border-radius: 5px; /* Bordas arredondadas */
+    background: #DFDFDF; /* Cor de fundo do slider */
+    outline: none; /* Remove contorno padrão */
+    opacity: 0.7; /* Opacidade */
+}
+  
+.button-cta
+{
+    height: 40px; /* Altura do botão */
+    margin-top: 40px; /* Margem superior */
+    background-color: #3EB72B; /* Cor de fundo verde */
+    border: 0; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    color: #FFF; /* Cor do texto branca */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    cursor: pointer; /* Altera o cursor para pointer */
+}
+  
+.container-password
+{
+    max-width: 480px; /* Largura máxima do container da senha */
+    margin: 14px 0; /* Margem vertical */
+    display: flex; /* Flexbox para layout */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Alinha ao centro */
+    cursor: pointer; /* Altera o cursor */
+}
+  
+.title
+{
+    text-align: center; /* Centraliza o texto */
+    color: #FFF; /* Cor do texto branca */
+    font-size: 28px; /* Tamanho da fonte */
+    margin-top: 24px; /* Margem superior */
+    margin-bottom: 8px; /* Margem inferior */
+} 
+  
+.password
+{
+    height: 60px; /* Altura do campo de senha */
+    background-color: rgba(0,0,0,0.40); /* Fundo semitransparente */
+    border: 1px solid #313131; /* Borda cinza escura */
+    display: flex; /* Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: #FFF; /* Cor do texto branca */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: transform 0.5s; /* Animação de transformação */
+}
+
+.password:hover
+{
+    transform: scale(1.05); /* Aumenta o tamanho no hover */
+    border-color: #FFF; /* Borda branca no hover */
+}
+  
+.hide{
+    display: none; /* Esconde o elemento */
+}
+  
+.tooltip
+{
+    color: #FFF; /* Cor do texto branca */
+    position: relative; /* Posição relativa */
+    top: 20px; /* Distância do topo */
+    padding: 6px 8px; /* Padding interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 6px; /* Bordas arredondadas */
+    background: rgb(15, 15, 15); /* Fundo escuro */
+    opacity: 0; /* Invisível inicialmente */
+    visibility: hidden; /* Esconde visibilidade */
+    transition: all .5s ease-in-out; /* Animação suave */
+    text-align: center; /* Centraliza o texto */
+}
+  
+.container-password:hover .tooltip
+{
+    bottom: 50px; /* Move para cima */
+    visibility: visible; /* Torna visível */
+    opacity: 1; /* Torna opaco */
+}
